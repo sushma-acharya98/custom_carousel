@@ -1,0 +1,249 @@
+:root {
+    --color-primary: #fff;
+    --color-yellow: #ffff04;
+    --color-orange: #f8af72;
+    --color-purple: #8b32a6;
+    --color-pink: #e1677d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* reset css */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    /* background: linear-gradient(to right, #f2709c, #ff9472); */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f8b972+0,7a35ab+100 */
+    
+}
+
+.site__wrapper {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, rgba(248, 185, 114, 1) 0%, rgba(122, 53, 171, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    min-height: 100vh;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+.container {
+    padding-top: 60px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.group_box {
+    /* height: 250px; */
+    background: linear-gradient(to right, #f2709c, #ff9472);
+    border-radius: 15px;
+    padding: 20px;
+    padding-bottom: 100px;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition: all 0.3s linear;
+}
+
+.group_box.active {
+    transform: scale(1.3);
+}
+
+.group_box.active + .group_box {
+    z-index: 1;
+}
+
+.box_top {
+    height: 150px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.box_bottom {
+    display: flex;
+}
+
+.box_left {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+.box_right {
+    padding-left: 20px;
+    width: calc(100% - 50px);
+}
+
+.box_right-top {
+    width: 100%;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.box_right-bottom {
+    width: 50%;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.row_container {
+    display: flex;
+    padding-top: 20px;
+}
+
+/* .right_row{
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+} */
+
+/* .left_row {
+    width: 300px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.box {
+    width: 100px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+} */
